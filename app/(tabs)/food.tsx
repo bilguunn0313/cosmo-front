@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import FoodMenuSwipe from "@/features/menu/FoodMenySwipe";
 
 const food = () => {
   return (
-    <View>
-      <Text>food</Text>
-    </View>
+    <ScrollView className="flex-1 bg-white">
+      <FoodMenuSwipe />
+    </ScrollView>
   );
 };
 
