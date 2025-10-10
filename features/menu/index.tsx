@@ -28,7 +28,7 @@ const menuByDate: Record<string, { name: string }[]> = {
   [days[2].date]: [{ name: "Гахайн хуурга" }, { name: "Шөл" }],
 };
 
-export default function FoodMenuSwipe() {
+export default function MenuScreen() {
   const [selectedDate, setSelectedDate] = useState(days[0].date);
   const foods = menuByDate[selectedDate] || [];
 

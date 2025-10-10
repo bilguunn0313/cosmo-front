@@ -1,14 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Page = () => {
+const PowerCutScreen = () => {
   return (
     <View>
-      <Text>page</Text>
+      <Text>PowerCutPScreen</Text>
     </View>
   );
 };
 
-export default Page;
-
+export default PowerCutScreen;
 const styles = StyleSheet.create({});
