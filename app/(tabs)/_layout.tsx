@@ -39,7 +39,7 @@ const _Layout = () => {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="food"
         options={{
           title: "Хоол",
@@ -47,7 +47,7 @@ const _Layout = () => {
             <TabIcon icon={Utensils} focused={focused} />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name="profile"
         options={{

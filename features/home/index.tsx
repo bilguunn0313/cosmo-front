@@ -1,14 +1,19 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { ScrollView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import ButtonGrid from "./_components/ButtonGrid";
 
-const HomeScreen = () => {
+export default function HomeScreen() {
   return (
-    <View>
-      <Text>HomePage</Text>
-    </View>
+    <SafeAreaView
+      className="flex-1 bg-white"
+      edges={["bottom", "left", "right"]}
+    >
+      <ScrollView
+        contentContainerStyle={{ padding: 16 }}
+        showsVerticalScrollIndicator={false}
+      >
+        <ButtonGrid />
+      </ScrollView>
+    </SafeAreaView>
   );
-};
-
-export default HomeScreen;
-
-const styles = StyleSheet.create({});
+}

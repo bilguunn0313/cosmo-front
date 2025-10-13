@@ -18,7 +18,7 @@ export default function ScreenHeader({ title, showBack = false }: Props) {
           onPress={() => router.back()}
           className="p-2 rounded-full bg-gray-200"
         >
-          <ArrowLeft size={20} color="#1F2937" />
+          <ArrowLeft size={10} color="#1F2937" />
         </TouchableOpacity>
       )}
       <Text className={`text-xl font-bold ml-${showBack ? 3 : 0}`}>

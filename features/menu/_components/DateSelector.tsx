@@ -40,7 +40,7 @@ export default function DateSelector({ days, selectedDate, onSelect }: Props) {
           return (
             <TouchableOpacity
               className={`rounded-lg py-2 px-1 mr-1 items-center ${
-                isSelected ? "bg-indigo-600" : "bg-white"
+                isSelected ? "bg-blue-500 " : "bg-white"
               }`}
               style={{ width: buttonWidth }}
               onPress={() => onSelect(item.date)}

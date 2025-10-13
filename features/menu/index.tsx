@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { View } from "react-native";
-
 import FoodList from "./_components/FoodList";
-import Header from "./_components/Header";
 import DateSelector from "./_components/DateSelector";
 
 const today = new Date();
@@ -34,7 +32,6 @@ export default function MenuScreen() {
 
   return (
     <View className="flex-1 bg-gray-100 p-4">
-      <Header />
       <DateSelector
         days={days}
         selectedDate={selectedDate}

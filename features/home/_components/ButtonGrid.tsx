@@ -4,12 +4,7 @@ import { View } from "react-native";
 import { useRouter } from "expo-router";
 import {
   Utensils,
-  Calendar,
-  ShoppingBag,
   UserRound,
-  Star,
-  MessageSquare,
-  PrinterCheck,
   BatteryCharging,
   PlugZap,
   Thermometer,
@@ -21,7 +16,7 @@ type ButtonItem = {
   icon: React.ComponentType<{ size?: number; color?: string }>;
   label: string;
   screen:
-    | "/food"
+    | "/menu"
     | "/inventory"
     | "/thermometer"
     | "/ac"
@@ -33,7 +28,7 @@ export default function ButtonGrid() {
   const router = useRouter();
 
   const buttons: ButtonItem[] = [
-    { icon: Utensils, label: "Хоол", screen: "/food" },
+    { icon: Utensils, label: "Хоол", screen: "/menu" },
     { icon: PackageMinus, label: "Барааны устгал", screen: "/inventory" },
     { icon: Thermometer, label: "Агуулахын градус", screen: "/thermometer" },
     { icon: UserRound, label: "AC цэнэглэлт", screen: "/ac" },
