@@ -1,3 +1,4 @@
+import { DateSelectorProps } from "@/types/types";
 import React from "react";
 import {
   FlatList,
@@ -7,22 +8,14 @@ import {
   Dimensions,
 } from "react-native";
 
-type Props = {
-  days: {
-    date: string;
-    dayName: string;
-    dayNum: number;
-    month: string;
-    isToday: boolean;
-  }[];
-  selectedDate: string;
-  onSelect: (date: string) => void;
-};
-
 const screenWidth = Dimensions.get("window").width;
 
-export default function DateSelector({ days, selectedDate, onSelect }: Props) {
-  const buttonWidth = (screenWidth - 32 - 16) / 5; // padding *2 + gap*4
+export default function DateSelector({
+  days,
+  selectedDate,
+  onSelect,
+}: DateSelectorProps) {
+  const buttonWidth = (screenWidth - 32 - 16) / 5; // padding*2 + gap*4
 
   return (
     <View className="h-[90px]">
@@ -40,7 +33,7 @@ export default function DateSelector({ days, selectedDate, onSelect }: Props) {
           return (
             <TouchableOpacity
               className={`rounded-lg py-2 px-1 mr-1 items-center ${
-                isSelected ? "bg-blue-500 " : "bg-white"
+                isSelected ? "bg-blue-500" : "bg-white"
               }`}
               style={{ width: buttonWidth }}
               onPress={() => onSelect(item.date)}

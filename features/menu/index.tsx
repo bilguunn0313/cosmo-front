@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View } from "react-native";
 import FoodList from "./_components/FoodList";
 import DateSelector from "./_components/DateSelector";
+import { Meal } from "@/types/types";
 
 const today = new Date();
 
@@ -20,10 +21,15 @@ const getDays = (count: number) =>
 
 const days = getDays(30);
 
-const menuByDate: Record<string, { name: string }[]> = {
-  [days[0].date]: [{ name: "Бууз" }, { name: "Гуляш" }],
-  [days[1].date]: [{ name: "Хуушуур" }, { name: "Цуйван" }],
-  [days[2].date]: [{ name: "Гахайн хуурга" }, { name: "Шөл" }],
+const menuByDate: Record<string, Meal[]> = {
+  [days[0].date]: [
+    { id: "1", name: "Бууз", category: "Main", date: days[0].date },
+    { id: "2", name: "Гуляш", category: "Main", date: days[0].date },
+  ],
+  [days[1].date]: [
+    { id: "3", name: "Хуушуур", category: "Main", date: days[1].date },
+    { id: "4", name: "Цуйван", category: "Main", date: days[1].date },
+  ],
 };
 
 export default function MenuScreen() {
@@ -37,7 +43,13 @@ export default function MenuScreen() {
         selectedDate={selectedDate}
         onSelect={setSelectedDate}
       />
-      <FoodList selectedDate={selectedDate} foods={foods} />
+      <FoodList
+        selectedDate={selectedDate}
+        foods={foods}
+        onAddFood={function (meal: Meal): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </View>
   );
 }
