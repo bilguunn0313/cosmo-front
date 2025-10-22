@@ -1,6 +1,13 @@
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import PowerCutScreen from "@/features/power-cut";
 
-export default function PowerCutPage() {
-  return <PowerCutScreen />;
-}
+const PowerCutScreen = () => {
+  return (
+    <View>
+      <Text>PowerCutPScreen</Text>
+    </View>
+  );
+};
+
+export default PowerCutScreen;
+const styles = StyleSheet.create({});

@@ -1,6 +1,14 @@
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import PrinterScreen from "@/features/printer";
 
-export default function PrinterPage() {
-  return <PrinterScreen />;
-}
+const PrinterScreen = () => {
+  return (
+    <View>
+      <Text>PrinterScreen</Text>
+    </View>
+  );
+};
+
+export default PrinterScreen;
+
+const styles = StyleSheet.create({});

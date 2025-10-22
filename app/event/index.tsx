@@ -1,7 +1,14 @@
-import EventScreen from "@/features/event";
-import InventoryScreen from "@/features/inventory";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function EventPage() {
-  return <EventScreen />;
-}
+const EventScreen = () => {
+  return (
+    <View>
+      <Text>EventScreen</Text>
+    </View>
+  );
+};
+
+export default EventScreen;
+
+const styles = StyleSheet.create({});

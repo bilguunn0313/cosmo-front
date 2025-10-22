@@ -8,11 +8,7 @@
     "scheme": "Cosmo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/cosmo-logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0d4f9d"
-    },
+
     "ios": {
       "supportsTablet": true
     },
@@ -30,10 +26,8 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      "expo-font"
-    ],
+    "plugins": ["expo-router", "expo-font"],
+
     "experiments": {
       "typedRoutes": true
     },

@@ -1,6 +1,14 @@
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import ThermometerScreen from "@/features/thermometer";
 
-export default function ThermometerPage() {
-  return <ThermometerScreen />;
-}
+const ThermometerScreen = () => {
+  return (
+    <View>
+      <Text>ThermometerPage</Text>
+    </View>
+  );
+};
+
+export default ThermometerScreen;
+
+const styles = StyleSheet.create({});

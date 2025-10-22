@@ -1,6 +1,12 @@
-import AcScreen from "@/features/ac";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function AcPage() {
-  return <AcScreen />;
-}
+const AcScreen = () => {
+  return (
+    <View>
+      <Text>AcScreen</Text>
+    </View>
+  );
+};
+
+export default AcScreen;

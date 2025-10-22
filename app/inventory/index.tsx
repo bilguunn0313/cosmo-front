@@ -1,6 +1,14 @@
-import InventoryScreen from "@/features/inventory";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function InventoryPage() {
-  return <InventoryScreen />;
-}
+const InventoryScreen = () => {
+  return (
+    <View>
+      <Text>InventoryScreen</Text>
+    </View>
+  );
+};
+
+export default InventoryScreen;
+
+const styles = StyleSheet.create({});

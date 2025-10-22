@@ -1,6 +1,13 @@
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import NotificationScreen from "@/features/notification";
 
-export default function NotificationPage() {
-  return <NotificationScreen />;
-}
+const NotificationScreen = () => {
+  return (
+    <View>
+      <Text>NotificationScreen</Text>
+    </View>
+  );
+};
+
+export default NotificationScreen;
+const styles = StyleSheet.create({});
